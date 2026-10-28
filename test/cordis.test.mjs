@@ -166,7 +166,7 @@ await test('the plugin entry reaches ACTIVE', async () => {
   assert.notEqual(fiber.state, FIBER_FAILED, 'the entry failed to activate')
   assert.equal(fiber.state, FIBER_ACTIVE, `expected ACTIVE, got ${String(fiber.state)}`)
   assert.equal(webServer.routes.length, 1, 'the route was not registered')
-  assert.equal(webServer.routes[0].path, '/plugins/dsh-prompt-enhancer')
+  assert.equal(webServer.routes[0].path, '/plugins/dsh-prompt-enhancer-pro')
   await root.fiber.dispose()
 })
 

@@ -1,7 +1,7 @@
 {
-  "name": "dsh-prompt-enhancer",
+  "name": "dsh-prompt-enhancer-pro",
   "version": "1.0.0",
-  "description": "One-click prompt enhancement for DeepSeek Harness: rewrite a rough composer draft into a structured, model-ready prompt using the host's own model.",
+  "description": "One-click prompt enhancement for DeepSeek Harness that runs on the model you already configured. No bundled third-party service, no outbound requests: your drafts never leave your own setup.",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -29,6 +29,8 @@
     "deepseek",
     "prompt",
     "prompt-engineering",
+    "privacy",
+    "local-first",
     "agent",
     "cordis"
   ],
@@ -43,8 +45,8 @@
     "catalog": {
       "category": "tool",
       "summary": {
-        "en": "One click in the composer rewrites your rough draft into a structured prompt, using the model already configured in DeepSeek Harness. No extra API key, no external requests.",
-        "zh": "输入框一键把草稿改写成结构化的高质量提示词，复用 DeepSeek Harness 已配置的模型，不需要额外 API Key，不发起任何外部请求。"
+        "en": "One click in the composer rewrites your rough draft into a structured prompt, using the model you already configured. No bundled third-party channel and no outbound requests: your drafts never leave your own setup.",
+        "zh": "输入框一键把草稿改写成结构化提示词，复用你已配置的模型。不内置第三方通道、不发起任何外部请求——你的提示词不会经过别人的服务器。"
       },
       "capabilities": [
         "fs",
@@ -57,12 +59,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zd5610982/dsh-prompt-enhancer.git"
+    "url": "git+https://github.com/zd5610982/dsh-prompt-enhancer-pro.git"
   },
   "bugs": {
-    "url": "https://github.com/zd5610982/dsh-prompt-enhancer/issues"
+    "url": "https://github.com/zd5610982/dsh-prompt-enhancer-pro/issues"
   },
-  "homepage": "https://github.com/zd5610982/dsh-prompt-enhancer#readme",
+  "homepage": "https://github.com/zd5610982/dsh-prompt-enhancer-pro#readme",
   "author": "zd5610982",
   "license": "MIT"
 }

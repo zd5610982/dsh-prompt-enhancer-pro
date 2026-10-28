@@ -4,7 +4,7 @@
  * The offline suites prove the plugin's own contract. This one proves the
  * *installation* is live inside the app:
  *
- *   1. `/plugins/dsh-prompt-enhancer/status` answers.
+ *   1. `/plugins/dsh-prompt-enhancer-pro/status` answers.
  *   2. The browser half is composed into the module graph and served. The URL
  *      is not guessable — it carries a revision derived from the bundle's
  *      filesystem metadata — so this recomputes it with the same algorithm
@@ -30,7 +30,7 @@ const here = dirname(fileURLToPath(import.meta.url))
 const packageDir = resolve(here, '..')
 const pluginManifest = JSON.parse(readFileSync(join(packageDir, 'package.json'), 'utf8'))
 const pluginName = pluginManifest.name
-const routeBase = `/plugins/dsh-prompt-enhancer`
+const routeBase = `/plugins/dsh-prompt-enhancer-pro`
 
 const args = process.argv.slice(2)
 const portIndex = args.indexOf('--port')
@@ -297,6 +297,6 @@ if (withEnhance) {
 console.log(`\nlive verification: ${passed} passed, ${failed} failed`)
 if (failed > 0) {
   console.error('\nIf a check failed: confirm the plugin is registered in dsh.profile.bundles,')
-  console.error('then look at ~/.dsh/prompt-enhancer-boot.log for "apply() entered" and "HTTP routes mounted".')
+  console.error('then look at ~/.dsh/prompt-enhancer-pro-boot.log for "apply() entered" and "HTTP routes mounted".')
   process.exit(1)
 }

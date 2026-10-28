@@ -145,7 +145,7 @@ console.log('bundle: registration contract')
 const bundle = loadClientBundle()
 
 await test('the bundle id matches the package name', () => {
-  assert.equal(bundle.id, '@local/dsh-prompt-enhancer')
+  assert.equal(bundle.id, 'dsh-prompt-enhancer-pro')
 })
 
 await test('the bundle registers exactly one module', () => {
@@ -232,7 +232,7 @@ await test('apply registers into conversation.input.right', () => {
   assert.equal(records.injects[0], 'conversation.input.right')
   assert.equal(records.registrations.length, 1)
   assert.equal(records.registrations[0].config.name, 'conversation.input.right')
-  assert.equal(records.registrations[0].config.id, 'prompt-enhancer')
+  assert.equal(records.registrations[0].config.id, 'prompt-enhancer-pro')
   // The slot gets the wrapper, which exists so a render throw can be reported
   // instead of vanishing into the runtime's silent `data-slot-error` boundary.
   assert.equal(records.registrations[0].component, fresh.exports.PromptEnhancerForSlot)

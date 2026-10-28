@@ -1,19 +1,19 @@
-# dsh-prompt-enhancer bundle patch: one insert over the empty profile root.
+# dsh-prompt-enhancer-pro bundle patch: one insert over the empty profile root.
 #
 # This file is the plugin's own loader layer. A bundle declares it through
 # `dsh.bundle.patch` in package.json; the profile's cordis.patch.yml addresses
 # these rows by id afterwards, with the last write winning per row.
 #
 # The `name` below must be the installed package name — it is what Cordis
-# resolves at load time. It was `@local/dsh-prompt-enhancer` in the private
-# build and is `dsh-prompt-enhancer` for the published one; if they disagree,
-# the entry fails to resolve and the plugin never activates.
+# resolves at load time. The row `id` and the HTTP route share the same
+# `-pro` suffix so this plugin can coexist with other prompt-enhancer
+# plugins in the same profile without colliding on either.
 #
 # A patch replaces the targeted row's whole `config` rather than merging into
 # it, so the resolved provider/model below are the plugin's complete config.
 - insert:
-    - id: prompt-enhancer
-      name: 'dsh-prompt-enhancer'
+    - id: prompt-enhancer-pro
+      name: 'dsh-prompt-enhancer-pro'
       config:
         # Empty means "use the host's default model". Set both explicitly when
         # the host exposes no usable default.

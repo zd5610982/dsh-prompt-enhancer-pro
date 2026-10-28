@@ -199,7 +199,7 @@ test('the inserted row names this package by name, not by file path', () => {
   const parsed = parsePatchList(readFileSync(patchPaths()[0], 'utf8'))
   const row = parsed[0].insert[0]
   assert.equal(row.name, manifest.name)
-  assert.equal(row.id, 'prompt-enhancer')
+  assert.equal(row.id, 'prompt-enhancer-pro')
 })
 
 test('the patch sets only config keys the plugin understands', () => {

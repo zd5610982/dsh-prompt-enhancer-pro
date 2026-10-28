@@ -7,7 +7,7 @@
  *   node test/e2e-probe.mjs
  */
 const PORT = Number(process.env.DSH_PORT ?? 19387)
-const ROUTE = `http://127.0.0.1:${PORT}/plugins/dsh-prompt-enhancer`
+const ROUTE = `http://127.0.0.1:${PORT}/plugins/dsh-prompt-enhancer-pro`
 
 async function post(draft, style) {
   const started = Date.now()

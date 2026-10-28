@@ -13,6 +13,11 @@ below; treat it as the support boundary.
 
 First public release. Verified against DeepSeek Harness `0.2.1-rc.2`.
 
+Published to npm as `dsh-prompt-enhancer-pro`. The `-pro` suffix is deliberate:
+bundle id, HTTP route (`/plugins/dsh-prompt-enhancer-pro`) and boot log path all
+carry it so this plugin can coexist with other prompt-enhancer plugins in the
+same profile without collisions.
+
 ### Added
 
 - Composer button that rewrites the current draft into a structured prompt and

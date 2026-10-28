@@ -239,7 +239,7 @@ await test('a throwing webServer.register is contained, not escaped', () => {
     llm: fakeLlm([]),
     webServer: {
       register() {
-        throw new Error('webserver: duplicate prefix route "/plugins/dsh-prompt-enhancer"')
+        throw new Error('webserver: duplicate prefix route "/plugins/dsh-prompt-enhancer-pro"')
       },
     },
   })

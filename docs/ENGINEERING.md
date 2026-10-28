@@ -1,5 +1,10 @@
 # dsh-prompt-enhancer
 
+> **说明**：这是公开发布前的内部工程记录，保留了当时的原始命名（`@local/dsh-prompt-enhancer`、
+> 路由 `/plugins/dsh-prompt-enhancer`、日志 `prompt-enhancer-boot.log`）。
+> 公开发布版已改名为 `dsh-prompt-enhancer-pro`，对应路由与日志路径均加 `-pro` 后缀，
+> 原因见 [`../README.md`](../README.md)。下文的技术结论依然有效，只是标识符不同。
+
 把 **WorkBuddy 的「增强提示词」** 做成 DeepSeek Harness 原生插件：在输入框旁边点一下，
 把随手写的草稿改写成结构完整、要求明确的提示词，再写回输入框。
 
