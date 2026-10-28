@@ -18,11 +18,19 @@
 
 ## 安装
 
+已发布到 npm：
+
 ```powershell
 # 完全退出 DeepSeek Harness（含托盘图标）后执行
-dsh plugin --profile desktop add https://github.com/zd5610982/dsh-prompt-enhancer-pro/releases/download/v1.0.0/dsh-prompt-enhancer-pro-1.0.0.tgz
+dsh plugin --profile desktop add dsh-prompt-enhancer-pro
 
 # 重启 DeepSeek Harness，然后刷新页面
+```
+
+不便使用 npm 时，也可以直接装这个 Release 的 tarball：
+
+```powershell
+dsh plugin --profile desktop add https://github.com/zd5610982/dsh-prompt-enhancer-pro/releases/download/v1.0.0/dsh-prompt-enhancer-pro-1.0.0.tgz
 ```
 
 ## 这个版本包含什么
@@ -36,7 +44,6 @@ dsh plugin --profile desktop add https://github.com/zd5610982/dsh-prompt-enhance
 
 - 仅验证 `0.2.1-rc.2`，其他 `0.2.x` 未逐一验证
 - 两套 cold-boot 测试需要宿主自带的 Cordis 才能执行，找不到时会打印 SKIPPED 并以 0 退出
-- 尚未发布到 npm，安装需使用上面的 Release 链接
 
 完整说明见 [README](https://github.com/zd5610982/dsh-prompt-enhancer-pro#readme)。
 

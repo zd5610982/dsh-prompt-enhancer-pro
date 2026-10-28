@@ -35,31 +35,29 @@
 
 **前置条件**：DeepSeek Harness `0.2.x`，已至少配置一个可用模型。
 
-### 方式 A：从 Release 安装（推荐）
-
-`dsh plugin` 会把参数原样转发给 pnpm，因此可以直接安装打包好的 tarball，不需要 npm 账号、也不需要本机有 git。
+### 方式 A：从 npm 安装（推荐）
 
 ```powershell
 # 1) 完全退出 DeepSeek Harness（含系统托盘图标）
-# 2) 安装（把版本号换成你想要的 release）
-dsh plugin --profile desktop add https://github.com/zd5610982/dsh-prompt-enhancer-pro/releases/download/v1.0.0/dsh-prompt-enhancer-pro-1.0.0.tgz
+# 2) 安装
+dsh plugin --profile desktop add dsh-prompt-enhancer-pro
 # 3) 重新启动 DeepSeek Harness
 ```
 
-### 方式 B：从源码安装
+### 方式 B：从 Release 安装（不装 npm 也能用）
+
+`dsh plugin` 会把参数原样转发给 pnpm，所以直接装打包好的 tarball 也行 —— 不需要 npm 账号，也不需要本机有 git。
+
+```powershell
+dsh plugin --profile desktop add https://github.com/zd5610982/dsh-prompt-enhancer-pro/releases/download/v1.0.0/dsh-prompt-enhancer-pro-1.0.0.tgz
+```
+
+### 方式 C：从源码安装
 
 ```powershell
 git clone https://github.com/zd5610982/dsh-prompt-enhancer-pro.git
 cd dsh-prompt-enhancer-pro
 dsh plugin --profile desktop add .
-```
-
-### 方式 C：等待 npm 上架
-
-本插件尚未发布到 npm。上架后此处会补充一条更短的命令：
-
-```powershell
-dsh plugin --profile desktop add dsh-prompt-enhancer-pro
 ```
 
 > CLI 动词随 dsh 预览版有变化。若上面的 `add` 报错，改用 `install`。
