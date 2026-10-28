@@ -1,0 +1,12 @@
+# Normalize line endings so Windows checkouts do not produce noisy diffs.
+* text=auto eol=lf
+
+# PowerShell scripts must keep CRLF to run reliably on Windows.
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+*.png binary
+*.jpg binary
+*.gif binary
+*.webp binary

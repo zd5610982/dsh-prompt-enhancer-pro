@@ -1,0 +1,68 @@
+{
+  "name": "dsh-prompt-enhancer",
+  "version": "1.0.0",
+  "description": "One-click prompt enhancement for DeepSeek Harness: rewrite a rough composer draft into a structured, model-ready prompt using the host's own model.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "lib/core.js",
+    "lib/schema.js",
+    "lib/patch-yaml.js",
+    "cordis.patch.yml",
+    "CHANGELOG.md",
+    "tools/after-restart.ps1"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "prompt",
+    "prompt-engineering",
+    "agent",
+    "cordis"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    },
+    "catalog": {
+      "category": "tool",
+      "summary": {
+        "en": "One click in the composer rewrites your rough draft into a structured prompt, using the model already configured in DeepSeek Harness. No extra API key, no external requests.",
+        "zh": "输入框一键把草稿改写成结构化的高质量提示词，复用 DeepSeek Harness 已配置的模型，不需要额外 API Key，不发起任何外部请求。"
+      },
+      "capabilities": [
+        "fs",
+        "model"
+      ]
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.0-0 <0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zd5610982/dsh-prompt-enhancer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zd5610982/dsh-prompt-enhancer/issues"
+  },
+  "homepage": "https://github.com/zd5610982/dsh-prompt-enhancer#readme",
+  "author": "zd5610982",
+  "license": "MIT"
+}
