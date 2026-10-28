@@ -1,6 +1,6 @@
 {
   "name": "dsh-prompt-enhancer-pro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "One-click prompt enhancement for DeepSeek Harness that runs on the model you already configured. No bundled third-party service, no outbound requests: your drafts never leave your own setup.",
   "type": "module",
   "main": "lib/index.js",

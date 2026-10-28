@@ -9,6 +9,20 @@ DeepSeek Harness is in developer preview and ships breaking changes between
 preview releases. The `dsh` version each release was verified against is noted
 below; treat it as the support boundary.
 
+## [1.0.1] - 2026-10-28
+
+### Fixed
+
+- The README inside the 1.0.0 tarball still said the plugin was not published to
+  npm. Install instructions now lead with
+  `dsh plugin --profile desktop add dsh-prompt-enhancer-pro`, with the Release
+  tarball kept as the no-npm fallback.
+- README links to `docs/ENGINEERING.md` and `LICENSE` were relative, and both
+  targets sit outside the published tarball, so they rendered as dead links on
+  the npm page. They now use absolute repository URLs.
+
+No code changes; `lib/` is byte-identical to 1.0.0.
+
 ## [1.0.0] - 2026-10-28
 
 First public release. Verified against DeepSeek Harness `0.2.1-rc.2`.

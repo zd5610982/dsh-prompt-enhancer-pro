@@ -133,7 +133,7 @@ dsh 插件加载后可以访问完整的 `ctx`。以下是这个插件的全部�
 | `< 0.2.0` | ❌ 未适配 |
 | `>= 0.3.0` | ❌ 未适配，等 dsh 稳定后再跟进 |
 
-dsh 处于 Developer Preview，preview 之间会有破坏性变更。**升级 dsh 后如果按钮消失，先看 [`docs/ENGINEERING.md`](docs/ENGINEERING.md) 的排错章节，再提 issue。**
+dsh 处于 Developer Preview，preview 之间会有破坏性变更。**升级 dsh 后如果按钮消失，先看 [`docs/ENGINEERING.md`](https://github.com/zd5610982/dsh-prompt-enhancer-pro/blob/main/docs/ENGINEERING.md) 的排错章节，再提 issue。**
 
 ---
 
@@ -176,7 +176,7 @@ dsh plugin --profile desktop remove dsh-prompt-enhancer-pro
 | 改写报错/超时 | 模型不可用 | 先在宿主里正常对话一次，确认模型可调 |
 | 输出被截断 | 模型 `max_tokens` 限制 | 换更长的模型，或缩短草稿 |
 
-详细根因分析与测试方法见 [`docs/ENGINEERING.md`](docs/ENGINEERING.md)。
+详细根因分析与测试方法见 [`docs/ENGINEERING.md`](https://github.com/zd5610982/dsh-prompt-enhancer-pro/blob/main/docs/ENGINEERING.md)。
 
 ---
 
@@ -227,6 +227,6 @@ MIT licensed.
 
 ## License
 
-[MIT](LICENSE) © 2026 zd5610982
+[MIT](https://github.com/zd5610982/dsh-prompt-enhancer-pro/blob/main/LICENSE) © 2026 zd5610982
 
 This is a community plugin. It is not affiliated with or endorsed by DeepSeek.
